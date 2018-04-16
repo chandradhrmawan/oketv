@@ -73,18 +73,54 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
+$server = $_SERVER['SERVER_ADDR'];
+
+switch ($server) {
+	case '192.168.1.207':
+		$hostname = '10.10.1.213';
+		$username = 'webtv';
+		$password = 'oketv';
+		$database = 'okemedia';
+		$cachedir = '/tmp/httpd-cache/okezone.tv/dbcache';
+		break;
+	case '192.168.1.31':
+		$hostname = '10.10.1.213';
+		$username = 'webtv';
+		$password = 'oketv';
+		$database = 'okemedia';
+		$cachedir = '/tmp/httpd-cache/okezone.tv/dbcache';
+		break;
+	case '192.168.3.151':
+		$hostname = 'localhost';
+		$username = 'webtv';
+		$password = 'oketv';
+		$database = 'okemedia';
+		$cachedir = '/tmp/httpd-cache/okezone.tv/dbcache';
+		break;
+	case '192.168.3.185':
+		$hostname = 'localhost';
+		$username = 'webtv';
+		$password = 'oketv';
+		$database = 'okemedia';
+		$cachedir = '/tmp/httpd-cache/okezone.tv/dbcache';
+		break;
+	default:
+		# code...
+		break;
+}
+
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => '',
-	'password' => '',
-	'database' => '',
+	'hostname' => $hostname,
+	'username' => $username,
+	'password' => $password,
+	'database' => $database,
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,
-	'cachedir' => '',
+	'cachedir' => $cachedir,
 	'char_set' => 'utf8',
 	'dbcollat' => 'utf8_general_ci',
 	'swap_pre' => '',
