@@ -4,7 +4,7 @@
 $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
 $domain   = $_SERVER['HTTP_HOST'];
 
-$config['base_url']   = $protocol.$domain.preg_replace('@/+$@', '', dirname($_SERVER['SCRIPT_NAME'])).'/';
+// $config['base_url']   = $protocol.$domain.preg_replace('@/+$@', '', dirname($_SERVER['SCRIPT_NAME'])).'';
 $config['index_page'] = "";
 $config['urchin']     = 'UA-1149387-43';
 $config['production'] = TRUE;

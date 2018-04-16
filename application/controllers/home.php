@@ -56,6 +56,8 @@ class Home extends CI_Controller
 
     $content['main_content'] = $this->load->view('content/vbase_home', $main_content, TRUE);
 
+    // print_r(base_url());die();
+
     $this->load->view('content/vbase', $content, FALSE);
   }
 

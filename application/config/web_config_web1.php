@@ -1,5 +1,5 @@
 <?php
-    $config['base_url']         = "http://tv.okezone.com"; 
+    // $config['base_url']         = "http://tv.okezone.com"; 
     $config['index_page']       = "";
 
     $config['urchin']           = 'UA-1149387-43';
