@@ -1,6 +1,6 @@
 <?php
 
-class Mvideo_kongkow
+class Mvideo_kongkow extends CI_Model
 {
   public function get_data($total = 12)
   {
