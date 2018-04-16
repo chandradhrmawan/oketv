@@ -55,6 +55,7 @@ class Home extends CI_Controller
     $main_content['okezone_slide_content'] = $this->load->view('content/vcontent_okezone_slide', $okezone_slides, TRUE);
 
     $content['main_content'] = $this->load->view('content/vbase_home', $main_content, TRUE);
+
     $this->load->view('content/vbase', $content, FALSE);
   }
 
