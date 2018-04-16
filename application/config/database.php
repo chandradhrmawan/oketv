@@ -105,7 +105,11 @@ switch ($server) {
 		$cachedir = '/tmp/httpd-cache/okezone.tv/dbcache';
 		break;
 	default:
-		# code...
+		$hostname = 'localhost';
+		$username = 'webtv';
+		$password = 'oketv';
+		$database = 'okemedia';
+		$cachedir = '/tmp/httpd-cache/okezone.tv/dbcache';
 		break;
 }
 
