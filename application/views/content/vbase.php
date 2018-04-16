@@ -331,8 +331,12 @@
 									<img src="<?php echo cdn_uri('tv/2016/img/logo/mnc-media-log.png') ?>">
 								</a>
 							</div>
-              <?php $render_ip = explode('.', $_SERVER['SERVER_ADDR']) ?>
-              <p>/ rendering in {elapsed_time} seconds [<?php echo $render_ip[3] ?>]</p>
+              <?php $render_ip = explode('.', $_SERVER['SERVER_ADDR']);
+              ?>
+              <p><?php if(isset($render_ip[3])){ ?>
+                / rendering in {elapsed_time} seconds [<?php echo $render_ip[3] ?>]<?php } ?>
+              
+              </p>
 						</div>
 					</div>
 				</div>
