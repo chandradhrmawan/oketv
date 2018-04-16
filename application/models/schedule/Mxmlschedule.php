@@ -1,6 +1,6 @@
 <?php
 
-class mxmlschedule extends CI_Model
+class Mxmlschedule extends CI_Model
 {
   function __construct()
   {

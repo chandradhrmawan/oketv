@@ -1,6 +1,6 @@
 <?php
 
-class mvideo_popular_json extends CI_Model
+class Mvideo_popular_json extends CI_Model
 {
   public function get_all_popular()
   {

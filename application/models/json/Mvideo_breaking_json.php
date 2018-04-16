@@ -1,6 +1,6 @@
 <?php
 
-class mvideo_breaking_json extends CI_Model
+class Mvideo_breaking_json extends CI_Model
 { 
   public function get_headline_video()
   {

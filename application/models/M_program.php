@@ -1,6 +1,6 @@
 <?php
 
-class m_program extends CI_Model
+class M_program extends CI_Model
 {
   public function get_all_data($id)
   {

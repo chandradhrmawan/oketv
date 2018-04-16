@@ -1,6 +1,6 @@
 <?php
 
-class mxmlinfografis extends CI_Model
+class Mxmlinfografis extends CI_Model
 {
   var $total_item;
 

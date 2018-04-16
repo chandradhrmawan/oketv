@@ -1,6 +1,6 @@
 <?php
 
-class mtv_live_streaming extends CI_Model
+class Mtv_live_streaming extends CI_Model
 { 
   public function get_streaming_schedule()
   {

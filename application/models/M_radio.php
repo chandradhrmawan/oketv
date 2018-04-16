@@ -1,6 +1,6 @@
 <?php
 
-class m_radio extends CI_Model
+class M_radio extends CI_Model
 {
   protected $radio_channel = array(
     'global_radio' => array(
